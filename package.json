@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Leandro Lima",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "pdf-creator-node": "^1.4.1",
     "pdf2pic": "^1.4.0",
