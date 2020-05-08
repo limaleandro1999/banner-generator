@@ -2,14 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <head>Template</head>
   </head>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <style>
+    body {
+      background-image: url('assets/background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 980px;
+      width: 860px;
+    }
+
+    img {
+      border-style: solid;
+      border-color: blueviolet;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+    }
+
+    p {
+      font-family: 'Lato';
+      font-size: 32px;
+      font-weight: 100;
+    }
+
+    p#date {
+      color: white;
+      font-weight: 100;
+      font-size: 32px;
+    }
+
+    p#title {
+      font-weight: 700;
+      font-size: 50px;
+    }
+
+    p#link {
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 50px;
+    }
+
+    .flex-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  </style>
   <body>
-    <h1>title: {{ title }}</h1>
-    <h1>speaker: {{ speaker_name }}</h1>
-    <h1>day: {{ day }}</h1>
-    <h1>start hour: {{ start_hour }}</h1>
-    <h1>end hour: {{ end_hour }}</h1>
-    <h1>link: {{ link_live }}</h1>
+    <div class="flex-container">
+      <img src="{{ speaker_photo }}" alt="Avatar">
+      <p id="title">{{ title }}</p>
+      <p>{{ speaker_name }}</p>
+      <p id="date">{{ day }} de {{ month }}, {{ start_hour }} às {{ end_hour }}</p>
+      <div>
+        <p>Assistir em:</p>
+        <p id="link">{{ link_live }}</p>
+      </div>
+    </div>
   </body>
 </html>

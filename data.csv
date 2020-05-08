@@ -1,4 +1,4 @@
-title,speaker_name,day,month,start_hour,end_hour,link_live
-AR Hoje,Ash,14,Maio,20h00,21h00,bit.ly/NerdZao
-AR Hoje 1,Ash 2,15,Junho,20h01,21h01,bit.ly/NerdZao2
-AR Hoje 3,Ash 3,5,Dez,21h01,22h01,bit.ly/NerdZao6
+title,speaker_photo,speaker_name,day,month,start_hour,end_hour,link_live
+Node é Top,https://avatars2.githubusercontent.com/u/17753354?s=460&u=622e4b565c718c7dccfbeba479fd6d1612135433&v=4,Leandro Lima,14,Maio,20h00,21h00,bit.ly/NerdZao
+Como não se matar com Javascript,https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDofwCg8aUixdLDvMF8L7HbKHQrc2vb41wTcxnTzUfZhIGjiMg&usqp=CAU,Algum brother ai 2,15,Junho,20h01,21h01,bit.ly/NerdZao2
+AWS por que?,https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-izOjjzkSIOg1eJw-DzOBZvNmd_C6LzWyLNQj2g8bBDjHtXyi&usqp=CAU,Leandro Lopes,5,Dez,21h01,22h01,bit.ly/NerdZao6

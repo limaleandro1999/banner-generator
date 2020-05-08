@@ -1,4 +1,6 @@
 const fs = require('fs');
+const path = require('path');
+
 const pdf = require('pdf-creator-node');
 const PDF2Pic = require('pdf2pic');
 const readline = require('readline-promise').default;
@@ -17,9 +19,10 @@ async function createBanner(csvPath, templatePath) {
   for (const bannerData of bannerDataArray) {
     const options = {
       options: {
-        format: 'A3',
+        width: '860px',
+        height: '980px',  
         orientation: 'portrait',
-        border: '10mm',
+        base: `file:///${path.join(__dirname, 'templates/assets')}`,
       },
       document: {
         data: bannerData,
