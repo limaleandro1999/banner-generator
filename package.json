@@ -1,0 +1,13 @@
+{
+  "name": "banner-generator",
+  "version": "1.0.0",
+  "description": "Generates a banner with information from a CSV file",
+  "main": "index.js",
+  "author": "Leandro Lima",
+  "license": "MIT",
+  "dependencies": {
+    "pdf-creator-node": "^1.4.1",
+    "pdf2pic": "^1.4.0",
+    "readline-promise": "^1.0.4"
+  }
+}
