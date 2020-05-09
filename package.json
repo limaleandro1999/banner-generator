@@ -9,8 +9,12 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "commander": "^5.1.0",
     "pdf-creator-node": "^1.4.1",
     "pdf2pic": "^1.4.0",
     "readline-promise": "^1.0.4"
+  },
+  "bin": {
+    "banner-generator": "index.js"
   }
 }

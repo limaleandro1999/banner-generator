@@ -13,7 +13,15 @@ This project generates png images given a html template and a CSV file.
 
 ```sh
 yarn
-yarn start
+yarn start -t <path to template> -c <path to csv> -a <path to assests folder>
+```
+
+## Testing
+
+You can test the banner generator with an example on the project:
+
+```sh
+yarn start -t examples/templates/template1.html -c data.csv -a examples/templates/assets/
 ```
 
 ## Authors

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const resolve = require('path').resolve;
 
 const pdf = require('pdf-creator-node');
 const PDF2Pic = require('pdf2pic');
@@ -12,7 +13,7 @@ module.exports = {
   createBanner,
 };
 
-async function createBanner(csvPath, templatePath) {
+async function createBanner(csvPath, templatePath, assetsPath) {
   const bannerDataArray = await convertCsvFileToJson(csvPath);
   let count = 1;
 
@@ -22,7 +23,7 @@ async function createBanner(csvPath, templatePath) {
         width: '860px',
         height: '980px',  
         orientation: 'portrait',
-        base: `file:///${path.join(__dirname, 'templates/assets')}`,
+        base: assetsPath ? `file:///${resolve(assetsPath)}` : undefined,
       },
       document: {
         data: bannerData,
